@@ -13,8 +13,8 @@ public class MyController {
   private final AtomicLong someData = new AtomicLong();
 
   @GetMapping("/data")
-  public MyData myData(@RequestParam(value = "label", defaultValue = "someLabel") String label) {
-    return new MyData(String.format(responseTemplate, label), someData.incrementAndGet());
+  public MyData myData(@RequestParam(value = "payload", defaultValue = "somePayload") String payload) {
+    return new MyData(String.format(responseTemplate, payload), someData.incrementAndGet());
   }
 }
 

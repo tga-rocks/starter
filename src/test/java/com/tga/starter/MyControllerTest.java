@@ -20,18 +20,18 @@ public class MyControllerTest {
 	private MockMvc mockMvc;
 
 	@Test
-	public void noParamGreetingShouldReturnDefaultMessage() throws Exception {
+	public void noParamShouldReturnDefaultMessage() throws Exception {
 
 		this.mockMvc.perform(get("/data")).andDo(print()).andExpect(status().isOk())
-				.andExpect(jsonPath("$.label").value("some API response: someLabel"));
+				.andExpect(jsonPath("$.payload").value("some API response: somePayload"));
 	}
 
 	@Test
-	public void paramGreetingShouldReturnTailoredMessage() throws Exception {
+	public void paramShouldReturnCustomMessage() throws Exception {
 
-		this.mockMvc.perform(get("/data").param("label", "myLabel"))
+		this.mockMvc.perform(get("/data").param("payload", "myPayload"))
 				.andDo(print()).andExpect(status().isOk())
-				.andExpect(jsonPath("$.label").value("some API response: myLabel"));
+				.andExpect(jsonPath("$.payload").value("some API response: myPayload"));
 	}
 
 }
