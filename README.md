@@ -11,4 +11,5 @@ Steps:
 7. moved over to desktop VS Code to explicitly be able to support the container config via devcontainer.json
 8. need java 17+ to run java extensions pack... in configuring the container via devcontainer.java, it won't allow changes due to permissions... hmmmm
 9. def permissions related as indicated in the creation.log... something to do with vs code as a user versus the image "owner"
-10. Had to change user in devcontainer.json to root 
+10. had to change user in devcontainer.json to root 
+11. got everything working... Spring issues were due to remoteUser and failure to get Java installed on image as part of the devcontainer.json overrides
