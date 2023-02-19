@@ -1,7 +1,10 @@
 # starter
 Java microservices starter
 
-Steps:
+Why?
+Curious to see how GitHub Codespaces works as a potential solution to scale up contractors (versus procuring and managing laptops) for big dev projects where we need to add, say, 500+ developers in a short time with a consistent approach to managing security governing code quality via GH Actions.
+
+Steps / notes:
 1. create new codespace from repository
 2. install Extension Pack for Java
 3. install Gradle for Java extension
