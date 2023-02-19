@@ -13,3 +13,4 @@ Steps:
 9. def permissions related as indicated in the creation.log... something to do with vs code as a user versus the image "owner"
 10. had to change user in devcontainer.json to root 
 11. got everything working... Spring issues were due to remoteUser and failure to get Java installed on image as part of the devcontainer.json overrides
+12. tested a new codespace running in a VS Code web browser instance and everything works as expected... mission accomplished
